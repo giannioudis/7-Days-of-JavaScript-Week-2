@@ -5,16 +5,16 @@ function vowelsAndConsonants(s) {
     c = '',
     vArr = ['a','e','i','o','u'],
     vowelsResult = "",
-    constantResult = "";
+    consonantsResult = "";
 
     for ( c of Arr ){        
         if( vArr.indexOf( c )!==-1 ){
             vowelsResult += c + "\n";
         }
         else {
-            constantResult += c + "\n";
+            consonantsResult += c + "\n";
         }
     }
    
-    console.log(vowelsResult+constantResult);
+    console.log(vowelsResult+consonantsResult);
 }
