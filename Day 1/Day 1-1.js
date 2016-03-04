@@ -3,16 +3,18 @@ function vowelsAndConsonants(s) {
     
     var Arr = s.toLowerCase().split( '' ),
     c = '',
-    vArr = ['a','e','i','o','u'];
+    vArr = ['a','e','i','o','u'],
+    vowelsResult = "",
+    constantResult = "";
 
     for ( c of Arr ){        
         if( vArr.indexOf( c )!==-1 ){
-            console.log( c );
+            vowelsResult += c + "\n";
+        }
+        else {
+            constantResult += c + "\n";
         }
     }
-    for ( c of Arr ){        
-        if( vArr.indexOf( c )===-1 ){
-            console.log( c );
-        }
-    }
+   
+    console.log(vowelsResult+constantResult);
 }
